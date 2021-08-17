@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "serviceSchema",
+    "description": "serviceSchema",
+    "type": "object",
+    "properties": {
+        "_org": {
+            "description": "Organisation Info",
+            "type": "string"
+        },
+        "name":{
+			"description": "name",
+			"type": "string"
+		},
+        "objectId":{
+			"type": "string",
+			"description": "Unique Id for object instances"
+		},
+		"objectType":{
+			"const": "service",
+			"description": "Type of object instance"
+		}
+    },
+    "required": ["_org", "name", "objectId", "objectType"]
+}

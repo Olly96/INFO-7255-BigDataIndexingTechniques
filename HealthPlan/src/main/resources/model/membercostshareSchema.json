@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "membercostshare",
+    "description": "membercostshare",
+    "type": "object",
+    "properties": {
+        "deductible": {
+			"type":"number",
+			"description": "Deductible Amount"
+			
+        },
+        "_org": {
+            "description": "Organisation Info",
+            "type": "string"
+        },
+         "copay": {
+			"type":"number",
+			"description": "Deductible Amount"	
+        },
+        "objectId":{
+			"type": "string",
+			"description": "Unique Id for object instances"
+		},
+		"objectType":{
+			"const": "membercostshare",
+			"description": "Type of object instance"
+		}
+    },
+    "required": ["deductible", "_org", "copay", "objectId", "objectType"]
+}
